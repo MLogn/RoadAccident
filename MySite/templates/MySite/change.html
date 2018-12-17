@@ -1,0 +1,106 @@
+{% extends "MySite/wrapper.html" %}
+{% block content %}
+    <div class="page-header text-center button">
+{#        <h1>Great Britain Road Accedents</h1>#}
+        <h2>Enter Data</h2>
+    </div>
+    <div class="container">
+    <div class="ada">
+         <form method="POST" action="create/">
+        {% csrf_token %}
+             <p>
+{#                 <label>Введите Имя</label><br>#}
+{#                 <input type="text" name="user_id" />#}
+{#             </p>#}
+                 <div class="form-group">
+             <input class="form-control" type="text" placeholder="Name" name="user_id">
+         </div>
+             <p><div class="form-group">
+    <select class="form-control" id="exampleFormControlSelect1" name="gender">
+      <option>Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+  </div>
+             </p>
+             <div class="form-group">
+             <input class="form-control" type="text" placeholder="Age" name="age">
+             </div>
+             <div class="form-group">
+             <input class="form-control" type="text" placeholder="Vehicle Age" name="vehicle_age">
+             </div>
+{#             <select class="form-control">#}
+{#  <option>Default select</option>#}
+{#</select>#}
+             <p><div class="form-group">
+{#    <label for="exampleFormControlSelect1">Vehicle</label>#}
+    <select class="form-control" id="exampleFormControlSelect1" name="veh_type">
+      <option>Vehicle Type</option>
+      <option>Pedal cycle</option>
+      <option>Motorcycle</option>
+      <option>Taxi</option>
+      <option>Car</option>
+      <option>Minibus</option>
+      <option>Bus</option>
+      <option>Tram</option>
+      <option>Van</option>
+      <option>Scooter</option>
+      <option>Electric motorcycle</option>
+    </select>
+  </div>
+             </p>
+             <div class="form-group">
+             <input class="form-control" type="text" placeholder="Date from                      yyyy.mm.dd" name="date_from">
+             </div>
+             <div class="form-group">
+             <input class="form-control" type="text" placeholder="Date To                          yyyy.mm.dd" name="date_to">
+             </div>
+
+{#             <p>#}
+{#                <label>Введите veh_type</label><br>#}
+{#                <input type="text" name="veh_type" />#}
+{#             </p>#}
+{#             <p>#}
+{#                <label>Введите gender</label><br>#}
+{#                <input type="text" name="gender" />#}
+{#             </p>#}
+{#             <p>#}
+{#                <label>Введите area</label><br>#}
+{#                <input type="text" name="area" />#}
+{#             </p>#}
+{#             <p>#}
+{#                <label>Введите age</label><br>#}
+{#                <input type="text" name="age" />#}
+{#             </p>#}
+{#             <p>#}
+{#                <label>Введите vehicle_age</label><br>#}
+{#                <input type="text" name="vehicle_age" />#}
+{#             </p>#}
+
+             <button type="submit" class="btn btn-primary">Apply Changes</button>
+        </form>
+ <!--   {% if people.count > 0 %}
+    <h2>Список пользователей</h2>
+    <table>
+        <thead><th>Id</th><th>Имя</th><th>Возраст</th><th></th></thead>
+        {% for person in people %}
+        <tr>
+            <td>{{ person.id }}</td>
+            <td>{{ person.veh_type }}</td>
+            <td>{{ person.gender }}</td>
+            <td>{{ person.area }}</td>
+            <td>{{ person.age }}</td>
+            <td>{{ person.vehicle_age}}</td>
+            <td><a href="edit/{{person.id}}">Изменить</a> | <a href="delete/{{person.id}}">Удалить</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    -->
+    </div>
+    </div>
+
+
+{% include "MySite/includes/part.html" %}
+
+{% endblock %}

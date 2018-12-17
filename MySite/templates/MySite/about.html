@@ -1,0 +1,24 @@
+{% extends "MySite/wrapper.html" %}
+{% block content %}
+    <div class="page-header text-center">
+        <h1>Great Britain Road Accedents</h1>
+        <h2>Created by: DreamTeam</h2>
+    </div>
+    <div class="container">
+    <h2>{{ user.get_full_name }}</h2>
+    <ul>
+        <li>Username: {{ user.username }}</li>
+        <li>bio: {{ user.account.bio }}</li>
+        <li>bio1: {{ user.account.bio1 }}</li>
+        <li>bio2: {{ user.account.bio2 }}</li>
+        <li>bio3: {{ user.account.bio3 }}</li>
+        <li>bio4: {{ user.account.bio4 }}</li>
+        <li>bio5: {{ user.account.bio5 }}</li>
+        <li>bio6: {{ user.account.bio6 }}</li>
+    </ul>
+    </div>
+
+
+{% include "MySite/includes/part.html" %}
+
+{% endblock %}

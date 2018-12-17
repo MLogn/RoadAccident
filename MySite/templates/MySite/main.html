@@ -1,0 +1,16 @@
+{% extends "MySite/wrapper.html" %}
+{% block content %}
+    <div class="page-header text-center">
+        <h1>Great Britain Road Accedents</h1>
+        <h2>Created by: DreamTeam</h2>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <a class="btn btn-outline-success button" href="{% url 'login'%}" role="button">Authorize</a>
+        </div>
+    </div>
+
+
+{% include "MySite/includes/part.html" %}
+
+{% endblock %}

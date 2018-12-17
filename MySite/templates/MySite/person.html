@@ -1,0 +1,22 @@
+{% extends "MySite/wrapper.html" %}
+{% block content %}
+    <div class="page-header text-center logincenter">
+        <h1 style="">Great Britain Road Accedents</h1>
+
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6"><a class="btn btn-outline-success button" href="/MySite/change.html" role="button">Change Info</a></div>
+            <div class="col-lg-6"><a class="btn btn-outline-success button" href="{% url 'stat'%}" role="button">Statistics</a></div>
+
+
+           <!-- <a class="btn btn-outline-success button" href="/test" role="button">About</a>-->
+
+
+        </div>
+    </div>
+
+
+{#{% include "MySite/includes/part.html" %}#}
+
+{% endblock %}

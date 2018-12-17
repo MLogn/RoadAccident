@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GBRA</title>
+    {% load static %}
+    <link rel="stylesheet" href= "{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/cover.css' %}" type="text/css">
+</head>
+<body>
+<br>
+
+<div class="container">
+    <div class="row">
+
+    </div>
+</div>
+<!--
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+        <a href="/user" class="btn btn-success btn-lg"> User</a>
+        </div>
+        <div class="col-4">
+         <a href="/admin" class="btn btn-success btn-lg"> Admin</a>
+        </div>
+    </div>
+
+
+</div>
+-->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

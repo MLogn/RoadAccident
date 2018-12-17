@@ -1,0 +1,46 @@
+.button{
+
+    margin-top: 50px;
+    font-size: 35px;
+}
+.ada{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.logincenter{
+    margin-top: 15%;
+}
+.centered{
+    text-align: center;
+}
+.header-h123 {
+    position: relative;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.header-h123 h1 {
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    border: .125rem solid #6a1b9a;
+    color: #6a1b9a;
+}
+.header-h123 h1::after {
+    content: "";
+    position: absolute;
+    background: #6a1b9a;
+    height: .125rem;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -999;
+}
+.header-h123-dark h1 {
+    background: #6a1b9a;
+    color: #fff;
+}
